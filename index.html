@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#8f4f2e" />
+  <meta name="description" content="Ferval — Donde viven los recuerdos. Colección Otoño · Día de Muertos 2026." />
+  <title>Ferval — Donde viven los recuerdos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <img class="hero__image" src="assets/un-lugar-en-la-mesa.jpeg" alt="Composición artesanal Ferval de Día de Muertos" />
+    <div class="hero__veil"></div>
+    <nav class="nav wrap">
+      <a class="brand" href="#inicio" aria-label="Ferval">FERVAL</a>
+      <button class="nav__toggle" aria-label="Abrir menú">☰</button>
+      <div class="nav__links">
+        <a href="#historia">Historia</a>
+        <a href="#coleccion">Colección</a>
+        <a href="#individuales">Piezas</a>
+        <a href="#personaliza">Personaliza</a>
+        <a class="pill" href="#pedido">Pedir</a>
+      </div>
+    </nav>
+    <div class="hero__content wrap">
+      <p class="eyebrow">Colección Otoño · Día de Muertos 2026</p>
+      <h1>Donde viven<br>los recuerdos</h1>
+      <p class="hero__copy">Hay recuerdos que no se guardan en una fotografía. Viven en un aroma, en una flor, en un lugar en la mesa… y en todo aquello que nos hace sentir cerca de quien amamos.</p>
+      <a class="cta" href="#coleccion">Descubrir la colección</a>
+    </div>
+    <button id="musicToggle" class="music-toggle" type="button" aria-label="Activar música" title="La música se añadirá cuando se defina la pista">♪ <span>Música</span></button>
+    <a class="scroll" href="#historia" aria-label="Bajar">↓</a>
+  </header>
+
+  <main>
+    <section class="story section" id="historia">
+      <div class="wrap story__grid">
+        <div>
+          <p class="eyebrow dark">Una colección hecha para sentir</p>
+          <h2>Hay aromas que saben volver a casa.</h2>
+        </div>
+        <div class="story__text">
+          <p>El chocolate caliente. El pan compartido. El color del cempasúchil. Aquella mascota que dejó huellitas para siempre. Un lugar en la mesa que, aunque hoy esté vacío, sigue lleno de recuerdos.</p>
+          <p>Esta colección nació de todo eso que permanece. Cada pieza está elaborada artesanalmente, una a una, para transformar nuestras tradiciones en pequeños instantes capaces de volver a sentirse.</p>
+          <p class="signature">En Ferval no hacemos solamente velas.<br><strong>Creamos recuerdos que puedes mirar, encender, regalar y volver a sentir.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="collection section" id="coleccion">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow dark">Creaciones con historia</p>
+          <h2>Más que velas: escenas que cuentan algo.</h2>
+          <p>Cada composición reúne aromas, texturas y símbolos para convertirse en un recuerdo completo.</p>
+        </div>
+        <div id="productGrid" class="product-grid"></div>
+      </div>
+    </section>
+
+    <section class="feature feature--pets" id="personaliza">
+      <div class="wrap feature__grid">
+        <div class="feature__photos">
+          <img src="assets/huellitas-perrito.jpeg" alt="Huellitas al cielo con perrito" />
+          <img src="assets/huellitas-gatito.jpeg" alt="Huellitas al cielo con gatito" />
+        </div>
+        <div class="feature__copy">
+          <p class="eyebrow">Personalización Ferval</p>
+          <h2>Hay recuerdos que tienen nombre. Y otros, incluso, tienen rostro.</h2>
+          <p>Complementa tu creación con papel picado personalizado en cartulina de color, diseñado especialmente a partir de una foto y preparado para corte en Cricut.</p>
+          <div class="price-list compact">
+            <div><span>Nombre sobre diseño existente</span><strong>$80</strong></div>
+            <div><span>Retrato + nombre</span><strong>$120</strong></div>
+            <div><span>Diseño especial / más de un rostro</span><strong>desde $150</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="individuals section" id="individuales">
+      <div class="wrap">
+        <div class="section-head split">
+          <div>
+            <p class="eyebrow dark">Crea tu propia historia</p>
+            <h2>Piezas individuales</h2>
+          </div>
+          <p>Elige las piezas que conecten contigo para complementar tu ofrenda, crear tu propia composición o regalar un pequeño detalle hecho a mano.</p>
+        </div>
+        <div id="individualGrid" class="individual-grid"></div>
+        <p class="note">*Precios individuales editables antes de publicar la versión final.</p>
+      </div>
+    </section>
+
+    <section class="craft section">
+      <div class="wrap craft__grid">
+        <div class="craft__photo"><img src="assets/flores-recordarte.jpeg" alt="Arreglo floral artesanal Ferval" /></div>
+        <div>
+          <p class="eyebrow dark">Hecho lento. Hecho a mano.</p>
+          <h2>Lo especial también está en el proceso.</h2>
+          <p>Ninguna pieza Ferval sale de una línea de producción. Cada vela se vierte, desmolda, detalla, pinta, monta y presenta artesanalmente.</p>
+          <p>Cuando eliges una creación Ferval, no compras únicamente cera, aroma o decoración. Te llevas <strong>diseño, tiempo, manos, historia y emoción.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="order" id="pedido">
+      <div class="wrap order__inner">
+        <p class="eyebrow">Edición limitada 2026</p>
+        <h2>Elige el recuerdo que quieres llevar contigo.</h2>
+        <p>Confirma disponibilidad, personalizaciones y fecha de entrega directamente con Ferval.</p>
+        <div class="order__terms">
+          <div><strong>Tiempo de elaboración</strong><span>5 a 7 días</span></div>
+          <div><strong>50% de anticipo</strong><span>para confirmar y comenzar tu pedido</span></div>
+          <div><strong>50% restante</strong><span>antes de la entrega</span></div>
+          <div><strong>Envío con costo adicional</strong><span>según zona de entrega</span></div>
+        </div>
+        <a id="whatsappBtn" class="cta light" href="#">Hacer mi pedido por WhatsApp</a>
+        <small>Transferencia · Efectivo · Tarjetas · Piezas sujetas a disponibilidad</small>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div><strong>FERVAL</strong><span>Velas artesanales</span></div>
+      <p>En Ferval no solo hacemos velas. Creamos recuerdos inolvidables.</p>
+      <a href="#inicio">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <button class="modal__close" aria-label="Cerrar">×</button>
+    <div class="modal__card">
+      <img id="modalImg" alt="" />
+      <div class="modal__body">
+        <p class="eyebrow dark" id="modalTag"></p>
+        <h3 id="modalTitle"></h3>
+        <p id="modalText"></p>
+        <div class="modal__meta">
+          <div><span>Incluye</span><p id="modalIncludes"></p></div>
+          <div class="modal__price" id="modalPrice"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
