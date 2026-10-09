@@ -9,15 +9,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261008f" />
+  <link rel="stylesheet" href="styles.css?v=20261008g" />
 </head>
 <body>
+  <div class="floating-candles" aria-hidden="true">
+    <span class="float-candle"></span>
+    <span class="float-candle"></span>
+    <span class="float-candle"></span>
+    <span class="float-candle"></span>
+    <span class="float-candle"></span>
+    <span class="float-candle"></span>
+    <span class="float-candle"></span>
+  </div>
+
   <header class="hero" id="inicio">
-    <img class="hero__image" src="assets/centro-v3.png" alt="Ofrenda artesanal de velas Ferval" />
+    <img class="hero__image" src="assets/hero-portada-v7.png" alt="Ofrenda artesanal de Ferval" />
     <div class="hero__veil"></div>
-    <div class="papel-top" aria-hidden="true">
-      <span></span><span></span><span></span><span></span><span></span><span></span>
-    </div>
+    <img class="hero__papel" src="assets/papel-banner-v7.png" alt="" aria-hidden="true" />
 
     <nav class="nav wrap">
       <a class="brand" href="#inicio" aria-label="Ferval">
@@ -40,7 +48,7 @@
     <div class="hero__content wrap">
       <p class="eyebrow">Tradición mexicana · Día de Muertos 2026</p>
       <h1>Donde viven<br>los recuerdos</h1>
-      <p class="hero__copy">Flores que muestran el camino, aromas que nos devuelven a casa y pequeñas luces que mantienen cerca a quienes amamos.</p>
+      <p class="hero__copy">Una colección inspirada en el cempasúchil, los altares, la mesa compartida y esos aromas que nos hacen volver al corazón del hogar.</p>
       <div class="hero__actions">
         <a class="cta" href="#coleccion">Descubrir la colección</a>
       </div>
@@ -48,11 +56,11 @@
         <span class="vela"><i></i></span>
         <span class="vela vela--sm"><i></i></span>
         <span class="vela vela--md"><i></i></span>
+        <span class="vela vela--sm"><i></i></span>
       </div>
     </div>
 
     <div class="papel-strip" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
-    <button id="musicToggle" class="music-toggle" type="button" aria-label="Activar música">♪ <span>Música</span></button>
   </header>
 
   <main>
@@ -65,11 +73,11 @@
     <section class="story section" id="historia">
       <div class="marigold-divider"><span>✺</span><span>✺</span><span>✺</span></div>
       <div class="wrap story__grid">
-        <div class="story__intro">
-          <p class="eyebrow dark">Una colección hecha para sentir</p>
-          <h2>Hay aromas que saben volver a casa.</h2>
+        <div class="story__visual">
+          <p class="eyebrow dark centered-text">Una colección hecha para sentir</p>
+          <h2 class="centered-text">Hay aromas que saben volver a casa.</h2>
           <div class="story__card frame-mex soft-frame">
-            <img src="assets/mini-v5.png" alt="Mini Tradición Ferval" loading="lazy" />
+            <img src="assets/aromas-casa-v7.png" alt="Ofrenda de Día de Muertos iluminada por velas" loading="lazy" />
           </div>
         </div>
         <div class="story__text card-surface">
@@ -86,23 +94,35 @@
         <div class="section-head centered">
           <p class="eyebrow dark">Creaciones con historia</p>
           <h2>Una ofrenda, una mesa, un recuerdo.</h2>
-          <p>Cada composición reúne cera, aroma, barro, flores y símbolos de nuestra tradición. Toca una pieza para verla más de cerca.</p>
+          <p class="centered-copy">Cada composición reúne cera, aroma, barro, flores y símbolos de nuestra tradición. Toca una pieza para verla más de cerca.</p>
         </div>
         <div id="productGrid" class="product-grid"></div>
       </div>
     </section>
 
     <section class="individuals section" id="individuales">
-      <div class="papel-inline" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
-      <div class="wrap individual-layout">
-        <div class="individual-photo frame-mex">
-          <img src="assets/individuales-v4.png" alt="Selección de piezas individuales Ferval" loading="lazy" />
-        </div>
-        <div>
+      <div class="wrap">
+        <div class="individual-header centered">
           <p class="eyebrow dark">Crea tu propia ofrenda</p>
           <h2>Piezas individuales</h2>
-          <p class="lead">Elige las piezas que conecten contigo para complementar tu altar, crear tu propia composición o regalar un pequeño detalle hecho a mano.</p>
-          <div id="individualGrid" class="individual-grid"></div>
+          <p class="centered-copy">Elige las piezas que conecten contigo para complementar tu altar, crear tu propia composición o regalar un pequeño detalle hecho a mano.</p>
+        </div>
+        <div class="individual-layout">
+          <div class="individual-photo frame-mex">
+            <img src="assets/individuales-v7.png" alt="Selección de piezas individuales Ferval" loading="lazy" />
+          </div>
+          <div class="individual-panel card-surface">
+            <div class="individual-panel__top">
+              <div>
+                <p class="eyebrow dark">Catálogo de piezas</p>
+                <h3>Elige cada detalle</h3>
+              </div>
+              <div class="mini-vela-row" aria-hidden="true">
+                <span class="mini-vela"></span><span class="mini-vela"></span><span class="mini-vela"></span>
+              </div>
+            </div>
+            <div id="individualGrid" class="individual-grid"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -112,9 +132,14 @@
         <div class="section-head centered light-head">
           <p class="eyebrow">Un detalle que lo hace verdaderamente suyo</p>
           <h2>Papel picado personalizado</h2>
-          <p>Agrega a tu creación un papel picado personalizado con el nombre y el rostro de tu perrito o de ese ser querido que vive en tu corazón.</p>
+          <p class="centered-copy">Agrega a tu creación un papel picado personalizado con el nombre y el rostro de tu perrito o de ese ser querido que vive en tu corazón.</p>
           <div class="paper-price"><span>Costo adicional</span><strong>$120</strong></div>
         </div>
+
+        <div class="paper-banner-card">
+          <img src="assets/papel-banner-v7.png" alt="Inspiración de papel picado colorido para Día de Muertos" loading="lazy" />
+        </div>
+
         <div class="paper-gallery">
           <figure><img src="assets/papel-sally-v3.png" alt="Papel picado personalizado de Sally" loading="lazy"><figcaption>Tu mascota, su rostro y su nombre.</figcaption></figure>
           <figure><img src="assets/papel-alberto-v3.png" alt="Papel picado personalizado de Alberto" loading="lazy"><figcaption>También puede ser un homenaje a un ser querido.</figcaption></figure>
@@ -139,7 +164,7 @@
       <div class="wrap order__inner">
         <p class="eyebrow">Edición limitada 2026</p>
         <h2>Elige el recuerdo que quieres llevar contigo.</h2>
-        <p>Confirma disponibilidad, personalización y fecha de entrega directamente con Ferval.</p>
+        <p class="centered-copy">Confirma disponibilidad, personalización y fecha de entrega directamente con Ferval.</p>
         <div class="vela-row vela-row--order" aria-hidden="true">
           <span class="vela"><i></i></span>
           <span class="vela vela--sm"><i></i></span>
@@ -188,7 +213,7 @@
     </div>
   </div>
 
-  <script src="data.js?v=20261008f"></script>
-  <script src="script.js?v=20261008f"></script>
+  <script src="data.js?v=20261008g"></script>
+  <script src="script.js?v=20261008g"></script>
 </body>
 </html>
