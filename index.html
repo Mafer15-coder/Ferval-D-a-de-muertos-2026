@@ -9,14 +9,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261008d" />
+  <link rel="stylesheet" href="styles.css?v=20261008f" />
 </head>
 <body>
   <header class="hero" id="inicio">
     <img class="hero__image" src="assets/centro-v3.png" alt="Ofrenda artesanal de velas Ferval" />
     <div class="hero__veil"></div>
+    <div class="papel-top" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+
     <nav class="nav wrap">
-      <a class="brand" href="#inicio" aria-label="Ferval">FERVAL</a>
+      <a class="brand" href="#inicio" aria-label="Ferval">
+        <img src="assets/logo-ferval.png" alt="Logo Ferval" />
+        <div class="brand__text">
+          <strong>Ferval</strong>
+          <small>Velas artesanales</small>
+        </div>
+      </a>
       <button class="nav__toggle" aria-label="Abrir menú">☰</button>
       <div class="nav__links">
         <a href="#historia">Historia</a>
@@ -31,8 +41,16 @@
       <p class="eyebrow">Tradición mexicana · Día de Muertos 2026</p>
       <h1>Donde viven<br>los recuerdos</h1>
       <p class="hero__copy">Flores que muestran el camino, aromas que nos devuelven a casa y pequeñas luces que mantienen cerca a quienes amamos.</p>
-      <a class="cta" href="#coleccion">Descubrir la colección</a>
+      <div class="hero__actions">
+        <a class="cta" href="#coleccion">Descubrir la colección</a>
+      </div>
+      <div class="vela-row" aria-hidden="true">
+        <span class="vela"><i></i></span>
+        <span class="vela vela--sm"><i></i></span>
+        <span class="vela vela--md"><i></i></span>
+      </div>
     </div>
+
     <div class="papel-strip" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
     <button id="musicToggle" class="music-toggle" type="button" aria-label="Activar música">♪ <span>Música</span></button>
   </header>
@@ -43,18 +61,22 @@
         <span>✺</span><strong>OFRENDA · MEMORIA · CEMPASÚCHIL · HOGAR · TRADICIÓN</strong><span>✺</span>
       </div>
     </section>
+
     <section class="story section" id="historia">
       <div class="marigold-divider"><span>✺</span><span>✺</span><span>✺</span></div>
       <div class="wrap story__grid">
-        <div>
+        <div class="story__intro">
           <p class="eyebrow dark">Una colección hecha para sentir</p>
           <h2>Hay aromas que saben volver a casa.</h2>
+          <div class="story__card frame-mex soft-frame">
+            <img src="assets/mini-v5.png" alt="Mini Tradición Ferval" loading="lazy" />
+          </div>
         </div>
-        <div class="story__text">
+        <div class="story__text card-surface">
           <p>El chocolate caliente. El pan compartido. El color del cempasúchil. Aquella mascota que dejó huellitas para siempre. Un lugar en la mesa que, aunque hoy esté vacío, sigue lleno de recuerdos.</p>
           <p>Esta colección nació de todo eso que permanece. Cada pieza se elabora artesanalmente, una a una, para transformar nuestras tradiciones en pequeños instantes capaces de volver a sentirse.</p>
           <blockquote>“Recordar también es una forma de volver a encontrarnos.”</blockquote>
-          <p class="signature">En Ferval no hacemos solamente velas.<br><strong>Creamos recuerdos que puedes mirar, encender, regalar y volver a sentir.</strong></p>
+          <p class="signature">En Ferval no hacemos solamente velas. <strong>Creamos recuerdos que puedes mirar, encender, regalar y volver a sentir.</strong></p>
         </div>
       </div>
     </section>
@@ -71,6 +93,7 @@
     </section>
 
     <section class="individuals section" id="individuales">
+      <div class="papel-inline" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
       <div class="wrap individual-layout">
         <div class="individual-photo frame-mex">
           <img src="assets/individuales-v4.png" alt="Selección de piezas individuales Ferval" loading="lazy" />
@@ -102,7 +125,7 @@
     <section class="craft section">
       <div class="wrap craft__grid">
         <div class="craft__photo frame-mex"><img src="assets/craft-v3.png" alt="Arreglo floral artesanal Ferval" loading="lazy" /></div>
-        <div>
+        <div class="craft__copy card-surface">
           <p class="eyebrow dark">Hecho lento. Hecho a mano.</p>
           <h2>Lo especial también está en el proceso.</h2>
           <p>Ninguna pieza Ferval sale de una línea de producción. Cada vela se vierte, desmolda, detalla, pinta, monta y presenta artesanalmente.</p>
@@ -117,6 +140,12 @@
         <p class="eyebrow">Edición limitada 2026</p>
         <h2>Elige el recuerdo que quieres llevar contigo.</h2>
         <p>Confirma disponibilidad, personalización y fecha de entrega directamente con Ferval.</p>
+        <div class="vela-row vela-row--order" aria-hidden="true">
+          <span class="vela"><i></i></span>
+          <span class="vela vela--sm"><i></i></span>
+          <span class="vela vela--md"><i></i></span>
+          <span class="vela vela--sm"><i></i></span>
+        </div>
         <div class="order__terms">
           <div><strong>5 a 7 días</strong><span>tiempo de elaboración</span></div>
           <div><strong>50% de anticipo</strong><span>para confirmar tu pedido</span></div>
@@ -131,7 +160,13 @@
 
   <footer class="footer">
     <div class="wrap footer__inner">
-      <div><strong>FERVAL</strong><span>Velas artesanales</span></div>
+      <div class="footer__brand">
+        <img src="assets/logo-ferval.png" alt="Logo Ferval" />
+        <div>
+          <strong>FERVAL</strong>
+          <span>Velas artesanales</span>
+        </div>
+      </div>
       <p>En Ferval no solo hacemos velas. Creamos recuerdos inolvidables.</p>
       <a href="#inicio">Volver arriba ↑</a>
     </div>
@@ -153,7 +188,7 @@
     </div>
   </div>
 
-  <script src="data.js?v=20261008d"></script>
-  <script src="script.js?v=20261008d"></script>
+  <script src="data.js?v=20261008f"></script>
+  <script src="script.js?v=20261008f"></script>
 </body>
 </html>
