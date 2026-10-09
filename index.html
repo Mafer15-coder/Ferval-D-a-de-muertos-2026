@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#8f4f2e" />
-  <meta name="description" content="Ferval — Donde viven los recuerdos. Colección Otoño · Día de Muertos 2026." />
+  <meta name="theme-color" content="#7b2f22" />
+  <meta name="description" content="Ferval — Donde viven los recuerdos. Colección Día de Muertos 2026." />
   <title>Ferval — Donde viven los recuerdos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="hero" id="inicio">
-    <img class="hero__image" src="assets/un-lugar-en-la-mesa.jpeg" alt="Composición artesanal Ferval de Día de Muertos" />
+    <img class="hero__image" src="assets/un-lugar-en-la-mesa.png" alt="Ofrenda artesanal de velas Ferval" />
     <div class="hero__veil"></div>
     <nav class="nav wrap">
       <a class="brand" href="#inicio" aria-label="Ferval">FERVAL</a>
@@ -22,22 +22,24 @@
         <a href="#historia">Historia</a>
         <a href="#coleccion">Colección</a>
         <a href="#individuales">Piezas</a>
-        <a href="#personaliza">Personaliza</a>
+        <a href="#papel">Papel picado</a>
         <a class="pill" href="#pedido">Pedir</a>
       </div>
     </nav>
+
     <div class="hero__content wrap">
-      <p class="eyebrow">Colección Otoño · Día de Muertos 2026</p>
+      <p class="eyebrow">Tradición mexicana · Día de Muertos 2026</p>
       <h1>Donde viven<br>los recuerdos</h1>
-      <p class="hero__copy">Hay recuerdos que no se guardan en una fotografía. Viven en un aroma, en una flor, en un lugar en la mesa… y en todo aquello que nos hace sentir cerca de quien amamos.</p>
+      <p class="hero__copy">Flores que muestran el camino, aromas que nos devuelven a casa y pequeñas luces que mantienen cerca a quienes amamos.</p>
       <a class="cta" href="#coleccion">Descubrir la colección</a>
     </div>
-    <button id="musicToggle" class="music-toggle" type="button" aria-label="Activar música" title="La música se añadirá cuando se defina la pista">♪ <span>Música</span></button>
-    <a class="scroll" href="#historia" aria-label="Bajar">↓</a>
+    <div class="papel-strip" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <button id="musicToggle" class="music-toggle" type="button" aria-label="Activar música">♪ <span>Música</span></button>
   </header>
 
   <main>
     <section class="story section" id="historia">
+      <div class="marigold-divider"><span>✺</span><span>✺</span><span>✺</span></div>
       <div class="wrap story__grid">
         <div>
           <p class="eyebrow dark">Una colección hecha para sentir</p>
@@ -45,7 +47,8 @@
         </div>
         <div class="story__text">
           <p>El chocolate caliente. El pan compartido. El color del cempasúchil. Aquella mascota que dejó huellitas para siempre. Un lugar en la mesa que, aunque hoy esté vacío, sigue lleno de recuerdos.</p>
-          <p>Esta colección nació de todo eso que permanece. Cada pieza está elaborada artesanalmente, una a una, para transformar nuestras tradiciones en pequeños instantes capaces de volver a sentirse.</p>
+          <p>Esta colección nació de todo eso que permanece. Cada pieza se elabora artesanalmente, una a una, para transformar nuestras tradiciones en pequeños instantes capaces de volver a sentirse.</p>
+          <blockquote>“Recordar también es una forma de volver a encontrarnos.”</blockquote>
           <p class="signature">En Ferval no hacemos solamente velas.<br><strong>Creamos recuerdos que puedes mirar, encender, regalar y volver a sentir.</strong></p>
         </div>
       </div>
@@ -53,51 +56,47 @@
 
     <section class="collection section" id="coleccion">
       <div class="wrap">
-        <div class="section-head">
+        <div class="section-head centered">
           <p class="eyebrow dark">Creaciones con historia</p>
-          <h2>Más que velas: escenas que cuentan algo.</h2>
-          <p>Cada composición reúne aromas, texturas y símbolos para convertirse en un recuerdo completo.</p>
+          <h2>Una ofrenda, una mesa, un recuerdo.</h2>
+          <p>Cada composición reúne cera, aroma, barro, flores y símbolos de nuestra tradición. Toca una pieza para verla más de cerca.</p>
         </div>
         <div id="productGrid" class="product-grid"></div>
       </div>
     </section>
 
-    <section class="feature feature--pets" id="personaliza">
-      <div class="wrap feature__grid">
-        <div class="feature__photos">
-          <img src="assets/huellitas-perrito.jpeg" alt="Huellitas al cielo con perrito" />
-          <img src="assets/huellitas-gatito.jpeg" alt="Huellitas al cielo con gatito" />
+    <section class="individuals section" id="individuales">
+      <div class="wrap individual-layout">
+        <div class="individual-photo frame-mex">
+          <img src="assets/piezas-individuales.png" alt="Selección de piezas individuales Ferval" loading="lazy" />
         </div>
-        <div class="feature__copy">
-          <p class="eyebrow">Personalización Ferval</p>
-          <h2>Hay recuerdos que tienen nombre. Y otros, incluso, tienen rostro.</h2>
-          <p>Complementa tu creación con papel picado personalizado en cartulina de color, diseñado especialmente a partir de una foto y preparado para corte en Cricut.</p>
-          <div class="price-list compact">
-            <div><span>Nombre sobre diseño existente</span><strong>$80</strong></div>
-            <div><span>Retrato + nombre</span><strong>$120</strong></div>
-            <div><span>Diseño especial / más de un rostro</span><strong>desde $150</strong></div>
-          </div>
+        <div>
+          <p class="eyebrow dark">Crea tu propia ofrenda</p>
+          <h2>Piezas individuales</h2>
+          <p class="lead">Elige las piezas que conecten contigo para complementar tu altar, crear tu propia composición o regalar un pequeño detalle hecho a mano.</p>
+          <div id="individualGrid" class="individual-grid"></div>
         </div>
       </div>
     </section>
 
-    <section class="individuals section" id="individuales">
+    <section class="paper-section section" id="papel">
       <div class="wrap">
-        <div class="section-head split">
-          <div>
-            <p class="eyebrow dark">Crea tu propia historia</p>
-            <h2>Piezas individuales</h2>
-          </div>
-          <p>Elige las piezas que conecten contigo para complementar tu ofrenda, crear tu propia composición o regalar un pequeño detalle hecho a mano.</p>
+        <div class="section-head centered light-head">
+          <p class="eyebrow">Un detalle que lo hace verdaderamente suyo</p>
+          <h2>Papel picado personalizado</h2>
+          <p>Podemos transformar el rostro de tu perrito o de ese ser querido que vive en tu corazón en un diseño de papel picado con su nombre.</p>
+          <div class="paper-price"><span>Costo adicional</span><strong>$120</strong></div>
         </div>
-        <div id="individualGrid" class="individual-grid"></div>
-        <p class="note">*Precios individuales editables antes de publicar la versión final.</p>
+        <div class="paper-gallery">
+          <figure><img src="assets/papel-sally.png" alt="Papel picado personalizado de Sally" loading="lazy"><figcaption>Tu mascota, su rostro y su nombre.</figcaption></figure>
+          <figure><img src="assets/papel-alberto.png" alt="Papel picado personalizado de Alberto" loading="lazy"><figcaption>También puede ser un homenaje a un ser querido.</figcaption></figure>
+        </div>
       </div>
     </section>
 
     <section class="craft section">
       <div class="wrap craft__grid">
-        <div class="craft__photo"><img src="assets/flores-recordarte.jpeg" alt="Arreglo floral artesanal Ferval" /></div>
+        <div class="craft__photo frame-mex"><img src="assets/flores-recordarte.png" alt="Arreglo floral artesanal Ferval" loading="lazy" /></div>
         <div>
           <p class="eyebrow dark">Hecho lento. Hecho a mano.</p>
           <h2>Lo especial también está en el proceso.</h2>
@@ -108,15 +107,16 @@
     </section>
 
     <section class="order" id="pedido">
+      <div class="papel-strip papel-strip--order" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
       <div class="wrap order__inner">
         <p class="eyebrow">Edición limitada 2026</p>
         <h2>Elige el recuerdo que quieres llevar contigo.</h2>
-        <p>Confirma disponibilidad, personalizaciones y fecha de entrega directamente con Ferval.</p>
+        <p>Confirma disponibilidad, personalización y fecha de entrega directamente con Ferval.</p>
         <div class="order__terms">
-          <div><strong>Tiempo de elaboración</strong><span>5 a 7 días</span></div>
-          <div><strong>50% de anticipo</strong><span>para confirmar y comenzar tu pedido</span></div>
+          <div><strong>5 a 7 días</strong><span>tiempo de elaboración</span></div>
+          <div><strong>50% de anticipo</strong><span>para confirmar tu pedido</span></div>
           <div><strong>50% restante</strong><span>antes de la entrega</span></div>
-          <div><strong>Envío con costo adicional</strong><span>según zona de entrega</span></div>
+          <div><strong>Envío adicional</strong><span>según zona de entrega</span></div>
         </div>
         <a id="whatsappBtn" class="cta light" href="#">Hacer mi pedido por WhatsApp</a>
         <small>Transferencia · Efectivo · Tarjetas · Piezas sujetas a disponibilidad</small>
