@@ -9,7 +9,72 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261008k" />
+  <link rel="stylesheet" href="styles.css?v=20261008m" />
+
+  <style>
+    /* v12: critical mobile modal override kept inline so GitHub/Safari cache cannot hide it */
+    @media (max-width: 820px) {
+      #modal.modal { padding: 10px !important; align-items: center !important; }
+      #modal .modal__card {
+        display: block !important;
+        width: 100% !important;
+        max-width: 760px !important;
+        max-height: 94svh !important;
+        overflow-y: auto !important;
+        border-radius: 22px !important;
+        background: #fffaf2 !important;
+      }
+      #modal #modalImg {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        max-height: 48svh !important;
+        min-height: 0 !important;
+        object-fit: contain !important;
+        background: #ead5bb !important;
+        padding: 10px !important;
+      }
+      #modal .modal__body { padding: 20px 20px 28px !important; }
+      #modal #modalTag { display: block !important; margin: 0 0 8px !important; }
+      #modal #modalTitle { font-size: 2.2rem !important; line-height: .98 !important; margin: 0 0 14px !important; }
+      #modal #modalText {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        height: auto !important;
+        max-height: none !important;
+        overflow: visible !important;
+        font-size: 1rem !important;
+        line-height: 1.72 !important;
+        margin: 0 0 20px !important;
+        text-align: justify !important;
+        color: #2a1812 !important;
+      }
+      #modal .modal__meta { margin-top: 0 !important; padding-top: 18px !important; border-top: 1px solid #dcc4a8 !important; }
+      #modal .modal__meta > div:first-child { margin-top: 0 !important; }
+      #modal #modalIncludes {
+        display: block !important;
+        font-size: .98rem !important;
+        line-height: 1.65 !important;
+        margin-top: 8px !important;
+        text-align: justify !important;
+      }
+      #modal #modalPrice { font-size: 2.45rem !important; margin-top: 18px !important; }
+      #modal .modal__close {
+        position: fixed !important;
+        z-index: 999 !important;
+        right: 16px !important;
+        top: 12px !important;
+        width: 46px !important;
+        height: 46px !important;
+      }
+    }
+    @media (max-width: 520px) {
+      #modal #modalImg { max-height: 44svh !important; }
+      #modal #modalTitle { font-size: 2rem !important; }
+      #modal #modalText { font-size: .96rem !important; line-height: 1.66 !important; }
+    }
+  </style>
 </head>
 <body>
   <div class="mex-scatter" aria-hidden="true">
@@ -208,7 +273,7 @@
     </div>
   </div>
 
-  <script src="data.js?v=20261008k"></script>
-  <script src="script.js?v=20261008k"></script>
+  <script src="data.js?v=20261008m"></script>
+  <script src="script.js?v=20261008m"></script>
 </body>
 </html>
